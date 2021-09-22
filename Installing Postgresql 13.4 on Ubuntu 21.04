@@ -1,0 +1,28 @@
+#Installing Postgresql - 13
+
+sudo apt-get install postgresql-13
+
+
+
+#To start Cluster
+
+sudo pg_ctlcluster 13 main start
+
+
+
+# Logging into postgres user
+
+sudo -i -u postgres
+
+
+
+#To create database
+
+CREATE DATABASE test_db;
+
+
+
+#To Create user with password
+
+CREATE USER test_user WITH PASSWORD "test_user";
+
